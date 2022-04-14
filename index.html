@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .user__name,
+        .button {
+            text-transform: capitalize;
+        }
+
+        .user {
+            width: 135px;
+            padding: 15px;
+            box-sizing: border-box;
+            border: 1px solid #dddddd;
+            float: left;
+            margin-right: 10px;
+        }
+
+        .user--dark-theme {
+            background: #222222;
+        }
+
+        .user--dark-theme .user__photo {
+            box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.4);
+        }
+
+        .user--dark-theme .user__name {
+            color: #ffffff;
+        }
+
+        .user__photo {
+            width: 100%;
+            display: block;
+            border-radius: 50%;
+            box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.35);
+            padding-top: 5px;
+        }
+
+        .user__name {
+            font-weight: bold;
+            text-align: center;
+            font-size: 0.9rem;
+            padding: 10px 0;
+        }
+
+        .button {
+            width: 100%;
+            color: #222222;
+            background: #cccccc;
+            padding: 7px 12px;
+            border: 0;
+            outline: 0;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        .button:active {
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+        }
+
+        .button--dark-theme:active {
+            box-shadow: 0 2px 2px rgba(255, 255, 255, 0.3);
+        }
+
+        .button--primary {
+            background: #2388e1;
+            color: #ffffff;
+        }
+    </style>
+
+    <title>Block Element Modifier - BEM</title>
+</head>
+
+<body>
+    <h1>Block Element Modifier - BEM</h1>
+    <div class="user">
+        <img class="user__photo" src="images/user.png" alt="User">
+        <div class="user__name">jeffery</div>
+        <button type="button" class="button button--primary">view profile</button>
+    </div>
+    <div class="user user--dark-theme">
+        <img class="user__photo" src="images/user.png" alt="User">
+        <div class="user__name">jeffery</div>
+        <button type="button" class="button button--primary button--dark-theme">view profile</button>
+    </div>
+</body>
+
+</html>
